@@ -22,23 +22,17 @@ $(window).on("load", function() {
     click: function() {
       let active = $(".custom__item--active");
       $(active).removeClass("custom__item--active");
-      // $(active).removeClass("font-weight-bold");
-      $(active).find(".number").removeClass("text-success");
-      $(active).find(".description").removeClass("text-dark");
       $(this).addClass("custom__item--active")
       activateCustomItem(this);
     }
-  });
+  })
 
   // CUSTOM ACTIVATE CALLBACK FUNCTION
   function activateCustomItem(active) {
-    // $(active).addClass("font-weight-bold");
-    $(active).find(".number").addClass("text-success");
     let description = $(active).find(".description");
-    $(description).addClass("text-dark");
     $(customTabText).html($(description).html());
     $(customWindowText).html($(active).find(".text").html());
-  };
+  }
 
   // ACTIVATE ITEM WHEN LOADING WINDOW
   activateCustomItem($(".custom__item--active"));

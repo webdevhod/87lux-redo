@@ -72,20 +72,6 @@ body {
 }
 
 // JUMBO BANNER SHAPES
-.rectangle-modal {
-  // @include flex_center();
-  background-image: linear-gradient(to right,  rgba(255, 145, 44, 0.87), rgba(255, 72, 66, 0.25)), url("/assets/img/header-groupwork.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: rgba(255, 145, 44, 1);
-  border-radius: 5px;
-  display:none;
-  width: 100%;
-  height: 300px;
-  position: relative;
-}
-
 #shapes {
   // @include flex_center();
 }
@@ -581,11 +567,6 @@ body {
     }
   }
 
-  .shapes {
-    // width: 100%;
-    transform: scale(.9) translateX(5%);
-  }
-
   .shapes-container {
     padding: 0;
   }
@@ -597,6 +578,10 @@ body {
   }
 
   .custom {
+    &__list {
+      margin-left: auto;
+      margin-right: auto;
+    }
     &__window {
       width: 100%;
     }
@@ -618,7 +603,7 @@ body {
 @include media-breakpoint-down(lg) {
   .banner {
     &__header {
-      font-size: 55px;
+      font-size: 51px;
     }
     &__subheader {
       font-size: 17px;
@@ -628,26 +613,15 @@ body {
   #jumbo {
     // margin-top: $spacer*3;
   }
+
   #shapes {
     margin-top: $spacer*5;
-    // margin-left: -$spacer*1.5;
+    transform: scale(.9) translateX(-5%);
   }
-  .shapes-container {
-    // padding: 0;
-  }
+
   .shapes {
-    // margin-left: 50%;
-
-    // margin-right: auto;
-    // width: 100%;
-    // transform: ;
     transform: scale(.9) translateX(15%);
-    // transform: scale(.5);
   }
-  .rectangle-modal {
-    height: 350px;
-  }
-
   .platforms {
     margin-top: $spacer*2.5;
     margin-bottom: $spacer*12;
@@ -805,7 +779,7 @@ body {
   }
   .shape {
     &.triangle {
-      right: -250px;
+      right: -230px;
     }
 
     &.circle2 {

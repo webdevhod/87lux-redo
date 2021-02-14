@@ -85,41 +85,41 @@ export default function Home() {
           <section className="custom" id="custom">
             <h1 className="custom__header">Need a Custom Solution?</h1>
             <div className="row custom__row">
-              <div className="col-xs-12 col-lg-2">
+              <div className="col-xs-12 col-xl-2">
                 <div className="row custom__list">
-                  <div className="col-6 col-lg-12">
+                  <div className="col-6 col-xl-12">
                     <div className="custom__item custom__item--active"><span className="number">01 </span><span className="description">Install Theme</span>
                       <p className="text">Having trouble with installing any of our themes? Well, we can help you by installing it for you!</p>
                     </div>
                   </div>
-                  <div className="col-6 col-lg-12">
+                  <div className="col-6 col-xl-12">
                     <div className="custom__item"><span className="number">02 </span><span className="description">Landing Page</span>
                       <p className="text">Having trouble with your landing pages? Well, we can help you improve your conversions!</p>
                     </div>
                   </div>
-                  <div className="col-6 col-lg-12">
+                  <div className="col-6 col-xl-12">
                     <div className="custom__item"><span className="number">03 </span><span className="description">Build Online Store</span>
                       <p className="text">Need help building an online store? You've come to the right place!</p>
                     </div>
                   </div>
-                  <div className="col-6 col-lg-12">
+                  <div className="col-6 col-xl-12">
                     <div className="custom__item"><span className="number">04 </span><span className="description">Custom Theme</span>
                       <p className="text">Want a customized theme for your online presence? You've come to the right place!</p>
                     </div>
                   </div>
-                  <div className="col-6 col-lg-12">
+                  <div className="col-6 col-xl-12">
                     <div className="custom__item"><span className="number">05 </span><span className="description">Custom App</span>
                       <p className="text">Need a customized app? You've come to the right place!</p>
                     </div>
                   </div>
-                  <div className="col-6 col-lg-12">
+                  <div className="col-6 col-xl-12">
                     <div className="custom__item"><span className="number">06 </span><span className="description">Marketing Assets</span>
                       <p className="text">We have many digital assets to help you with your online marketing!</p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="col-xs-12 col-lg-10">
+              <div className="col-xs-12 col-xl-10">
                 <div className="custom__window">
                   <ul className="nav custom__navtab">
                     <li className="custom__navitem"><span className="custom__tab-text">Install Theme</span></li>
