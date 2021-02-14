@@ -238,7 +238,7 @@ $(window).on("load", function() {
 
   new ScrollMagic.Scene({
     triggerElement: "#projects",
-    triggerHook: .9,
+    triggerHook: 1,
     reverse: true,
     offset: 100,
     duration: 0,
@@ -271,7 +271,7 @@ $(window).on("load", function() {
 
   new ScrollMagic.Scene({
     triggerElement: "#footer",
-    triggerHook: .9,
+    triggerHook: 1,
     reverse: true,
     offset: 100,
     duration: 0,
