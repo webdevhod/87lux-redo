@@ -1,0 +1,144 @@
+@mixin flex_center() {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@mixin font-family($ff: $font-family) {
+  font-family: $ff;
+}
+
+@mixin size_even($size) {
+  height: $size;
+  width: $size;
+}
+
+@mixin circle_border_shadow($color, $shadow) {
+  // https://stackoverflow.com/questions/23490320/gap-between-border-and-image-when-border-radius-is-added
+  background-color: $color;
+  border: 5px solid $color;
+  box-shadow: 0 12px 42px 1px $shadow;
+  // box-shadow: 0 7px 10px -3px rgba($color: $color, $alpha: .5);
+}
+
+@mixin box_shadow($shadow: 0 12px 42px 1px rgba(0,0,0, .15)) {
+  box-shadow: $shadow;
+}
+
+#header {
+  box-shadow: 0px 9px 24px rgba(0,0,0,0.15);
+  color: $color-black;
+  z-index: 1000;
+}
+
+.header {
+  &__logo {
+    @include font-family();
+    color: $color-black;
+    font-weight: 700;
+    font-size: 24px;
+  }
+}
+
+.navbar {
+  &__span {
+    @include font-family();
+    color: $color-black;
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+.navbar-toggler {
+  .close {
+    display: none;
+  }
+
+  .collapsed {
+    transition: all .1s ease-in-out;
+  
+    .hamburger {
+      display: inline;
+    }
+  }
+  
+  &:not(.collapsed) {
+    transition: all .1s ease-in-out;
+  
+    .hamburger {
+      display: none;
+    }
+  
+    .close {
+      display:inline;
+    }
+  }
+}
+
+#topButton {
+  right: 30px; /* Place the button 30px from the right */
+  bottom: 25px; /* Place the button at the bottom of the page */
+  display: inline-block;
+  font-size: 18px; /* Increase font size */
+  opacity: 0;
+  position: fixed; /* Fixed/sticky position */
+  visibility: hidden;
+  z-index: 1000; /* Make sure it does not overlap */
+
+  &.active {
+    cursor: pointer; /* Add a mouse pointer on hover */
+    opacity: .7;
+    transition: all .25s ease-in-out;
+    visibility: visible;
+  }
+}
+
+.cta-button {
+  @include font-family();
+  background-color: $color-cta-button-bg;
+  border: none;
+  border-radius: 5px;
+  color: $color-white;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 16px 46px;
+
+  &:hover {
+    background-color: $color-cta-button-bg-hover;
+    color: #e7e7e7;
+    transition: background-color .1s ease-in-out;
+  }
+  &:active {
+    background-color: $color-cta-button-bg;
+    box-shadow: 0 0 0 .2rem rgba($color: $color-cta-button-bg, $alpha: .25);
+    &:focus {
+      background-color: $color-cta-button-bg;
+      box-shadow: 0 0 0 .2rem rgba($color: $color-cta-button-bg, $alpha: .25);
+    }
+  }
+  &:focus {
+    background-color: $color-cta-button-bg;
+    box-shadow: 0 0 0 .2rem rgba($color: $color-cta-button-bg, $alpha: .25);
+  }
+}
+// FOOTER
+.footer {
+  background-color: $color-footer-bg;
+  padding: 200px 0 120px;
+
+  &__container {
+    text-align: center;
+  }
+
+  &__header {
+    color: $color-white;
+    margin-bottom: 40px;
+    // margin-bottom: $spacer * 3;
+  }
+  
+  &__cta {
+    box-shadow: 0px 12px 42px 1px rgba(0, 0, 0, 0.15);
+    background-color: $color-cta-button-bg;
+    text-align: center;
+  }
+}
