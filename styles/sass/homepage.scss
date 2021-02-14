@@ -431,6 +431,10 @@ body {
     margin-top: $spacer * 7;
   }
   
+  &__list-column {
+    padding: 0;
+  }
+
   .number, .description {
     color: #b0b6c0;
     @include font-family();

@@ -90,7 +90,7 @@ export default function Home() {
           <div className="container">
             <h1 className="custom__header">Need a Custom Solution?</h1>
             <div className="row custom__row">
-              <div className="col-xs-12 col-xl-2">
+              <div className="col-xs-12 col-xl-2 custom__list-column">
                 <div className="row custom__list">
                   <div className="col-6 col-xl-12">
                     <div className="custom__item custom__item--active"><span className="number">01 </span><span className="description">Install Theme</span>
