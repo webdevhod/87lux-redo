@@ -212,11 +212,9 @@ $(window).on("load", function() {
     .fromTo(
       "#footer .footer__cta", 1.5,
       {
-        y: screenHeight * .5,
         opacity: 0,
       },
       {
-        y: 0,
         opacity: 1
       }, "=0"
     )
