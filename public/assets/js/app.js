@@ -10,36 +10,6 @@ $(window).on("load", function() {
   // NAVBAR PADDING
   $("html").css("padding-top", $("#header").outerHeight(true))
   $("html").css("scroll-padding-top", $("#header").outerHeight(true))
- 
-  // TOP BUTTON APPEARANCE
-  let topButton = $("#topButton");
-
-  function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      $(topButton).addClass("active");
-    } else {
-      $(topButton).removeClass("active");
-    }
-  }
-  
-  // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    window.scroll({
-      behavior: 'smooth'
-    });
-  }
-
-  $(window).on({
-    scroll: function() {
-      scrollFunction();
-    }
-  })
-
-  $(topButton).on({
-    click: topFunction
-  });
 
   // stop the call to action from doing anything for now
   $("#banner .cta-button").on({

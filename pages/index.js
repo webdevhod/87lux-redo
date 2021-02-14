@@ -13,8 +13,6 @@ export default function Home() {
       <div className="container-fluid">
         {/* HEADER NAVBAR*/}
         <div className="container" id="content">
-          {/* TOP ARROW BUTTON*/}
-          <button className="btn btn-dark" onClick={() => topFunction()} title="Go to top" id="topButton"><i className="fa fa-chevron-up" /></button>
           {/* JUMBO*/}
           <section className="jumbo" id="jumbo">
             <div className="row jumbo__row">
