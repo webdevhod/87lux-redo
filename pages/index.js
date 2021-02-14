@@ -19,7 +19,7 @@ export default function Home() {
               {/* BUSINESS COPY*/}
               <div className="banner col-xs-12 col-lg-6" id="banner">
                 <div className="container-fluid banner__container">
-                  <h1 className="banner__header font-weight-bold">We Give Your Business an Edge Over Your Competitors!</h1>
+                  <h1 className="banner__header">We Give Your Business an Edge Over Your Competitors!</h1>
                   <h4 className="banner__subheader">Everything you need for your online business: Themes, Apps, Assets and More...</h4>
                   <form className="needs-validation" noValidate>
                     <div className="form-row">

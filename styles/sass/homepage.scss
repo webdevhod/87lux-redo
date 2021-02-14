@@ -39,6 +39,7 @@ body {
     @include font-family($font-family-header);
     color: $color-black;
     font-size: 57px;
+    font-weight: 600;
   }
 
   &__subheader {
@@ -617,7 +618,7 @@ body {
 @include media-breakpoint-down(lg) {
   .banner {
     &__header {
-      font-size: 62px;
+      font-size: 55px;
     }
     &__subheader {
       font-size: 17px;

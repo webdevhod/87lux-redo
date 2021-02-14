@@ -51,15 +51,6 @@ $(window).on("load", function() {
   let shapesTL = gsap.timeline();
   shapesTL
   .fromTo(
-    "#banner",0.5,
-    {
-      opacity: 0
-    },
-    {
-      opacity: 1
-    }, "=0"
-  )
-  .fromTo(
     "#shapes .shape",0.55,
     {
       x: screenWidth
