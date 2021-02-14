@@ -193,6 +193,7 @@ body {
   &__container {
     @include flex_center();
     height: 350px;
+    position: relative;
   }
 
   &__buttons {
@@ -308,7 +309,8 @@ body {
 
 // MEET THE TEAM
 #team {
-  margin: 200px 0;
+  margin-top: 200px;
+  margin-bottom: 200px;
   $padding: 50px;
   padding-left: $padding;
   padding-right: $padding;

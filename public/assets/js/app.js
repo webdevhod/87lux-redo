@@ -52,7 +52,7 @@ $(window).on("load", function() {
     {
       x:0,
       stagger: .5
-    }, "-=.5"
+    }, "-=0"
   )
   .fromTo(
     ".shape.rectangle .play",0.55,
@@ -61,7 +61,7 @@ $(window).on("load", function() {
     },
     {
       opacity: 1
-    }, "-=0"
+    }, "=0"
   )
 
 
