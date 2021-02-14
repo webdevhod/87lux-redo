@@ -1,10 +1,3 @@
-// var $ = require( "jquery" );
-function c() {
-  for (let i = 0; i < arguments.length; i++) {
-    console.log(arguments[i]);
-  }
-}
-
 $(window).on("load", function() {
   // https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors
   // NAVBAR PADDING
@@ -212,9 +205,11 @@ $(window).on("load", function() {
     .fromTo(
       "#footer .footer__cta", 1.5,
       {
+        y: screenHeight*.5,
         opacity: 0,
       },
       {
+        y: 0,
         opacity: 1
       }, "=0"
     )
