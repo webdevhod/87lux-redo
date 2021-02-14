@@ -14,7 +14,7 @@ export default function Home() {
         {/* HEADER NAVBAR*/}
         <div className="container" id="content">
           {/* TOP ARROW BUTTON*/}
-          <button className="btn btn-dark" onclick="topFunction()" title="Go to top" id="topButton"><i className="fa fa-chevron-up" /></button>
+          <button className="btn btn-dark" onClick={() => topFunction()} title="Go to top" id="topButton"><i className="fa fa-chevron-up" /></button>
           {/* JUMBO*/}
           <section className="jumbo" id="jumbo">
             <div className="row jumbo__row">
@@ -40,7 +40,7 @@ export default function Home() {
                   <div className="shape circle circle2" />
                   <div className="shape triangle" />
                   <div className="shape rectangle" data-toggle="modal" data-target="#project-modal">
-                    <div className="play"><img className="play__image" src="assets/img/icon-play.png" alt="Play button" srcSet /></div>
+                    <div className="play"><img className="play__image" src="assets/img/icon-play.png" alt="Play button" /></div>
                   </div>
                 </div>
               </div>
@@ -50,10 +50,10 @@ export default function Home() {
           <section className="platforms" id="platforms">
             <h6 className="platforms__header">PLATFORMS </h6>
             <div className="platforms__container row">
-              <div className="col-6 col-md-3 platforms__column"><a href="#!"><img className="platforms__logo" src="assets/img/logo-shopify.png" alt="Shopify logo" srcSet /></a></div>
-              <div className="col-6 col-md-3 platforms__column"><a href="#!"><img className="platforms__logo" src="assets/img/logo-wordpress.png" alt="WordPress logo" srcSet /></a></div>
-              <div className="col-6 col-md-3 platforms__column"><a href="#!"><img className="platforms__logo" src="assets/img/logo-bigcommerce.png" alt="BigCommerce logo" srcSet /></a></div>
-              <div className="col-6 col-md-3 platforms__column"><a href="#!"><img className="platforms__logo" src="assets/img/logo-wix.png" alt="Wix logo" srcSet /></a></div>
+              <div className="col-6 col-md-3 platforms__column"><a href="#!"><img className="platforms__logo" src="assets/img/logo-shopify.png" alt="Shopify logo" /></a></div>
+              <div className="col-6 col-md-3 platforms__column"><a href="#!"><img className="platforms__logo" src="assets/img/logo-wordpress.png" alt="WordPress logo" /></a></div>
+              <div className="col-6 col-md-3 platforms__column"><a href="#!"><img className="platforms__logo" src="assets/img/logo-bigcommerce.png" alt="BigCommerce logo" /></a></div>
+              <div className="col-6 col-md-3 platforms__column"><a href="#!"><img className="platforms__logo" src="assets/img/logo-wix.png" alt="Wix logo" /></a></div>
             </div>
           </section>
           {/* LATEST PROJECTS*/}
@@ -63,9 +63,9 @@ export default function Home() {
                 <h5 className="back-panel__header">LATEST PROJECTS</h5>
               </div>
               <div className="projects">
-                <div className="project"><a className="project__link" data-toggle="modal" data-target="#project-modal"><img className="project__image" src="assets/img/panel-dashboard.png" alt="Dashboard project" srcSet /></a></div>
-                <div className="project"> <a className="project__link d-none d-sm-block" data-toggle="modal" data-target="#project-modal"><img className="project__image" src="assets/img/panel-ecstasy.png" alt="Ecstasy landing page project" srcSet /></a></div>
-                <div className="project"><a className="project__link d-none d-md-block" data-toggle="modal" data-target="#project-modal"><img className="project__image--last" src="assets/img/panel-dailydev.png" alt="DailyDev project" srcSet /></a></div>
+                <div className="project"><a className="project__link" data-toggle="modal" data-target="#project-modal"><img className="project__image" src="assets/img/panel-dashboard.png" alt="Dashboard project" /></a></div>
+                <div className="project"> <a className="project__link d-none d-sm-block" data-toggle="modal" data-target="#project-modal"><img className="project__image" src="assets/img/panel-ecstasy.png" alt="Ecstasy landing page project" /></a></div>
+                <div className="project"><a className="project__link d-none d-md-block" data-toggle="modal" data-target="#project-modal"><img className="project__image--last" src="assets/img/panel-dailydev.png" alt="DailyDev project" /></a></div>
               </div>
             </div>
             <div className="latest-projects__buttons">
@@ -75,13 +75,13 @@ export default function Home() {
           {/* MEET THE TEAM*/}
           <section className="team-container" id="team">
             <h1 className="team-container__header">Meet the Team</h1>
-            <div className="team team--violet team--left team--top"><img className="team__image" src="assets/img/team-violet.jpeg" alt="Team member violet border" srcSet /></div>
-            <div className="team team--yellow team--left team--bottom"><img className="team__image" src="assets/img/team-yellow.jpeg" alt="Team member yellow border" srcSet /></div>
-            <div className="team team--blue team--left"><img className="team__image" src="assets/img/team-blue.jpeg" alt="Team member blue border" srcSet /></div>
-            <div className="team team--green team--top"><img className="team__image" src="assets/img/team-green.jpeg" alt="Team member green border" srcSet /></div>
-            <div className="team team--orange team--right team--top"><img className="team__image" src="assets/img/team-orange.jpeg" alt="Team member orange border" srcSet /></div>
-            <div className="team team--purple team--right"><img className="team__image" src="assets/img/team-purple.jpeg" alt="Team member purple border" srcSet /></div>
-            <div className="team team--red team--right team--bottom"><img className="team__image" src="assets/img/team-red.jpeg" alt="Team member red border" srcSet /></div>
+            <div className="team team--violet team--left team--top"><img className="team__image" src="assets/img/team-violet.jpeg" alt="Team member violet border" /></div>
+            <div className="team team--yellow team--left team--bottom"><img className="team__image" src="assets/img/team-yellow.jpeg" alt="Team member yellow border" /></div>
+            <div className="team team--blue team--left"><img className="team__image" src="assets/img/team-blue.jpeg" alt="Team member blue border" /></div>
+            <div className="team team--green team--top"><img className="team__image" src="assets/img/team-green.jpeg" alt="Team member green border" /></div>
+            <div className="team team--orange team--right team--top"><img className="team__image" src="assets/img/team-orange.jpeg" alt="Team member orange border" /></div>
+            <div className="team team--purple team--right"><img className="team__image" src="assets/img/team-purple.jpeg" alt="Team member purple border" /></div>
+            <div className="team team--red team--right team--bottom"><img className="team__image" src="assets/img/team-red.jpeg" alt="Team member red border" /></div>
           </section>
           {/* CUSTOM SOLUTION*/}
           <section className="custom" id="custom">
@@ -129,7 +129,7 @@ export default function Home() {
                   <div className="custom__window-container container-fluid">
                     <div className="custom__window-text-container container">
                       <p className="custom__window-text">Having trouble with installing any of our themes? Well, we can help you by install the theme for you!</p>
-                    </div><img className="custom__image" src="assets/img/custom-landingpage.png" alt="" srcSet /><img className="custom__image d-none d-lg-block" src="assets/img/custom-girl-laptop.png" alt="" srcSet />
+                    </div><img className="custom__image" src="assets/img/custom-landingpage.png" alt="" /><img className="custom__image d-none d-lg-block" src="assets/img/custom-girl-laptop.png" alt="" />
                   </div>
                 </div>
               </div>

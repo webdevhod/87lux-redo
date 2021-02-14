@@ -8,8 +8,8 @@ function c() {
 $(window).on("load", function() {
   // https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors
   // NAVBAR PADDING
-  $("html").css("padding-top", $("#header").outerHeight(true) + 8)
-  $("html").css("scroll-padding-top", $("#header").outerHeight(true) + 8)
+  $("html").css("padding-top", $("#header").outerHeight(true))
+  $("html").css("scroll-padding-top", $("#header").outerHeight(true))
  
   // TOP BUTTON APPEARANCE
   let topButton = $("#topButton");
