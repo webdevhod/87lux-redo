@@ -9,7 +9,7 @@ export default function Header() {
             <li className="nav-item"><a className="text-dark nav-link" href="#platforms"><span className="navbar__span">Themes</span></a></li>
             <li className="nav-item"><a className="text-dark nav-link" href="#projects"><span className="navbar__span">Apps</span></a></li>
             <li className="nav-item"><a className="text-dark nav-link" href="#custom"><span className="navbar__span">Assets</span></a></li>
-            <li className="nav-item"><a className="text-dark nav-link" href="#!" data-toggle="modal" data-target="#messageModal" data-whatever="@87lux"><span className="navbar__span">Contact Us</span></a></li>
+            <li className="nav-item"><a className="text-dark nav-link" href="#footer"><span className="navbar__span">Contact Us</span></a></li>
           </ul>
         </div>
       </div>

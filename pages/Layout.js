@@ -6,10 +6,12 @@ export default function Layout(props) {
   return (
     <>
       <Head>
-        <title>Blank</title>
+        <title>87LUX</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      {/* HEADER */}
       <Header />
+      {/* CONTENT */}
       {props.children}
       {/* FOOTER*/}
       <Footer />

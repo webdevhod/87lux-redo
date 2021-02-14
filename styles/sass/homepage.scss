@@ -750,6 +750,8 @@ body {
     }
     
     &__list {
+      text-align: center;
+      // width: 50%;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: $spacer;
@@ -829,6 +831,9 @@ body {
     }
     &__image {
       height: 305px;
+     }
+     &__list {
+       text-align: left;
      }
   }
   #footer {

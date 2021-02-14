@@ -1,13 +1,11 @@
 import Head from 'next/head';
 import Layout from "./Layout";
-// import Header from "../components/Header";
-// import Footer from "../components/Footer";
 
 export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>87Lux</title>
+        <title>87Lux Homepage</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="container-fluid">
